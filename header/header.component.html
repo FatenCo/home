@@ -1,0 +1,31 @@
+<mat-toolbar class="nav">
+  <span><mat-icon>compare_arrows</mat-icon> TechnoShop</span>
+  <div class="spacer"></div>
+  <a mat-button routerLink="connexion" class="conn"><mat-icon>person</mat-icon> Connexion</a>
+</mat-toolbar>
+
+<mat-toolbar class="head">
+  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" routerLink="bonPlan"><mat-icon>local_offer</mat-icon> Bon plan</a></li>
+        <li>
+          <a href="#"><mat-icon>menu</mat-icon> Catégories</a>
+          <ul class="menu">
+            <li><a href="#">Electroménager</a></li>
+            <li><a href="#">Ordinateurs</a></li>
+            <li><a href="#">Tv</a></li>
+            <li><a href="#">Smartphone</a></li>
+          </ul>
+        </li>
+        <li class="search-box">
+          <!-- Add ngModel to bind the input value to a variable -->
+          <input type="text" placeholder="Chercher un produit ou une catégorie..." [(ngModel)]="searchTerm" (input)="Search()">
+          <i class="fa fa-search"></i>
+        </li>
+        <li><a href="#" routerLink="notification"><mat-icon>notifications_active</mat-icon> Notifications</a></li>
+        <li><a href="#" routerLink="maSelection"><mat-icon>favorite</mat-icon> Ma sélection</a></li>
+      </ul>
+    </nav>
+  </div>
+</mat-toolbar>

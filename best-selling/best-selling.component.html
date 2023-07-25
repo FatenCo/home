@@ -1,0 +1,34 @@
+<div class="card-slider">
+  <div class="swiper-container" #swiperContainer>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let product of products">
+        <div class="card">
+          <div class="card-main">
+            <div class="discount">9%</div>
+            <div class="product-container">
+              <div class="p" (mouseover)="changeImage($event)"><img src="{{ product.image }}" alt="product"></div>
+              <div class="p" (mouseover)="changeImage($event)"><img src="{{ product.image }}" alt="product"></div>
+              <div class="p" (mouseover)="changeImage($event)"><img src="{{ product.image }}" alt="product"></div>
+            </div>
+            <div class="image"><img [src]="url" alt="Image"></div>
+            <div class="cart-line"></div>
+            <div class="cart-item">
+              <ul>
+                <li><a href=""><mat-icon>favorite</mat-icon></a></li>
+                <li><a href=""><mat-icon>search</mat-icon></a></li>
+              </ul>
+            </div>
+            <div class="content">
+              <p>nouveau prix :<span class="money">80dt</span></p>
+              <p>ancien prix :<span class="old-price">85dt</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+

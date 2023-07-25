@@ -1,0 +1,93 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+.nav {
+  background-color: #6C4AB6;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.conn {
+  color: white;
+}
+
+.head {
+  background-color: #6C4AB6;
+  color: white;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  width: 1483px;
+  margin-left: -17px;
+  margin-top: -12px;
+  margin-left: -32px;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 100px;
+  vertical-align: middle;
+}
+
+.navbar li a {
+  display: block;
+  padding: 10px 
+  40px;
+  text-decoration: none;
+  color: #333;
+  width: 100px;
+}
+
+.navbar li a mat-icon {
+  vertical-align: middle;
+}
+
+.navbar li a:hover {
+  background-color: #ccc;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 0;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.menu li {
+  display: block;
+}
+
+.menu li a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar li:hover .menu {
+  display: block;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-box input[type="text"] {
+  width: 450px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #333; /* Adjusted the text color to black */
+}
+.fa {
+  color: black;
+  margin-left: -50px;
+}
